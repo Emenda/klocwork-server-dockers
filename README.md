@@ -5,9 +5,10 @@ This repository gives you Dockerfiles for Klocwork Server(static analysis tools 
 ## What is Klocwork?
 
 The Klocwork analysis engine is the culmination of over 15 years of static analysis research. At the core of its technology is the ability to monitor the lifecycles of objects and infer their run time behaviour without executing the code. This allows a broad range of quality, reliability, security, and maintainability issues to be identified, with high accuracy.
-![alt tag]http://emenda.com/products/klocwork/
 
-![alt tag]https://www.klocwork.com/CMSPages/GetAzureFile.aspx?path=~\klocwork\media\assets\logos\logo-rw-klocwork.png&hash=29eba3b549d4ec9f1e17523f6f4e7cb286c07596045abd156978c0de21dd9fb0
+* [Emenda]http://emenda.com/products/klocwork/
+
+* [Klocwork]https://www.klocwork.com/CMSPages/GetAzureFile.aspx?path=~\klocwork\media\assets\logos\logo-rw-klocwork.png&hash=29eba3b549d4ec9f1e17523f6f4e7cb286c07596045abd156978c0de21dd9fb0
 
 ## Quick reference
 
