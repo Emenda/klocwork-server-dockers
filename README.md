@@ -4,11 +4,9 @@ This repository gives you Dockerfiles for Klocwork Server(static analysis tools 
 
 ## What is Klocwork?
 
-The Klocwork analysis engine is the culmination of over 15 years of static analysis research. At the core of its technology is the ability to monitor the lifecycles of objects and infer their run time behaviour without executing the code. This allows a broad range of quality, reliability, security, and maintainability issues to be identified, with high accuracy.
-
-<img src="http://emenda.com/imgs/emenda-logo.svg" height="400" width="400" title = "Emenda" alt = "Emenda">
-
-<img src="https://image.noelshack.com/fichiers/2018/10/1/1520246980-klocwork.png" height="200" width="400" title = "Klocwork" alt = "Klocwork">
+The Klocwork analysis engine is the culmination of over 15 years of static analysis research. At the core of its technology is the ability to monitor the lifecycles of objects and infer their run time behaviour without executing the code. This allows a broad range of quality, reliability, security, and maintainability issues to be identified, with high accuracy.<br>
+<img src="http://emenda.com/imgs/emenda-logo.svg" height="200" width="200" title = "Emenda" alt = "Emenda"><br>
+<img src="https://image.noelshack.com/fichiers/2018/10/1/1520246980-klocwork.png" height="100" width="200" title = "Klocwork" alt = "Klocwork">
 
 
 
@@ -58,7 +56,7 @@ amd64
 <ol><li> Compile the Dockerfile <code>docker build -t <b>[Name of your docker image] [path of the docker file]</b></code>
 <br>
 <em>Example</em>
-<br><code>docker build -t <b>Ubuntu\_KW12\_3\_server\_docker</b> <b>.</b>  
+<br><code>docker build -t <b>Ubuntu\_KW12\_3\_server\_docker</b> <b>.</b></code>
 <pre><code>Sending build context to Docker daemon
 Step 0 : FROM debian:unbuntu
  ---> bf84c1d84a8f
@@ -71,7 +69,7 @@ Successfully built aaf20fb25dac</code></pre>
 <br>
 <em>Example</em>
 <br><code>docker run -d --name <b>KW\_server\_12\_3</b> -p <b>8123:8123</b> <b>Ubuntu\_KW12\_3\_server\_docker</b>
-<pre><code> e9ca3cd8f90b8554ca99ec8ba15a039f827005bd8fecbf80d72ce7267006a6df</code></pre>
+<pre></code> <code>e9ca3cd8f90b8554ca99ec8ba15a039f827005bd8fecbf80d72ce7267006a6df</code></pre>
 </li>
 </ol>
 <li> If you use directly image from the DockerHub Website (<a href="https://hub.docker.com/r/emenda/klocwork/">link</a>)</li>
@@ -81,16 +79,16 @@ Successfully built aaf20fb25dac</code></pre>
 <br>
 <em>Example</em>
 <br><code>docker run -d --name <b>KW\_server\_12\_3</b> -p <b>8123:8123</b> <b>Ubuntu\_KW12\_3\_server\_docker</b>
-<pre><code> e9ca3cd8f90b8554ca99ec8ba15a039f827005bd8fecbf80d72ce7267006a6df</code></pre>
+<pre></code> <code>e9ca3cd8f90b8554ca99ec8ba15a039f827005bd8fecbf80d72ce7267006a6df</code></pre>
 </li>
 </ol>
 <li> Optional
 <ol> <li>Stop the docker <code>docker stop <b>[Name of your docker image]</b></code></li>
-<br>
+
 <em>Example</em>
-<br><code>docker stop <b>Ubuntu\_KW12\_3\_server\_docker</b>
+<br><code>docker stop <b>Ubuntu\_KW12\_3\_server\_docker</b></code>
 <li>Delete the docker <code>docker rm <b>[Name of your docker image]</b></code></li>
-<br>
+
 <em>Example</em>
 <br><code>docker rm <b>Ubuntu\_KW12\_3\_server\_docker</b></li>
 </ol>
