@@ -86,11 +86,12 @@ Successfully built aaf20fb25dac</code></pre>
 <ol> <li>Stop the docker <code>docker stop <b>[Name of your docker image]</b></code></li>
 
 <em>Example</em>
-<br><code>docker stop <b>Ubuntu\_KW12\_3\_server\_docker</b></code>
+<br><code>docker stop <b>Ubuntu\_KW12\_3\_server\_docker</b>
+</code>
 <li>Delete the docker <code>docker rm <b>[Name of your docker image]</b></code></li>
 
 <em>Example</em>
-<br><code>docker rm <b>Ubuntu\_KW12\_3\_server\_docker</b></li>
+<br><code>docker rm <b>Ubuntu\_KW12\_3\_server\_docker</b></code></li>
 </ol>
 </ol>
 
