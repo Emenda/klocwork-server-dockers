@@ -14,8 +14,8 @@ ARG LICENSE_PORT=27000
 ARG INSTALLER_PATH=/opt/Klocwork
 ARG INSTALL_DIRECTORY=/opt/Klocwork/Server
 ARG PROJECTS_ROOT=/opt/Klocwork/Projects_root_12_3
-ARG INSTALLER_FILE=http://emenda.com/download.?file=kw-server-installer.12.3.0.810.linux64.tar.gz
-ARG LICENSE_FILE=/license_path/LICENSE.lic
+ARG INSTALLER_FILE=[PATH_OF_YOUR_KW_12_3_LINUX_INSTALLER]
+ARG LICENSE_FILE=[PATH_OF_YOUR_KW_LICENSE]
 
 # Install pre-requisites packages for KW, GCC (minimum)
 RUN apt-get -y update 
@@ -47,13 +47,13 @@ RUN chown $USERNAME:$USERNAME $PROJECTS_ROOT
 #Logging as non root user - important pre-requisite from KW installation
 USER $USERNAME
 #Downloading installer file
-RUN wget $INSTALLER_FILE -O $INSTALLER_PATH/kw-server-installer.12.3.0.810.linux64.tar.gz
+RUN wget $INSTALLER_FILE -O $INSTALLER_PATH/$INSTALLER_FILE
 #Extracting KW Installer
-RUN tar -zxvf /opt/Klocwork/kw-server-installer.12.3.0.810.linux64.tar.gz -C $INSTALLER_PATH
-RUN chmod 750 /opt/Klocwork/kw-server-installer.12.3.0.810.linux64.sh
+RUN tar -zxvf $INSTALLER_PATH/$INSTALLER_FILE -C $INSTALLER_PATH
+RUN chmod 750 $INSTALLER_PATH/$INSTALLER_FILE
 RUN chown $USERNAME:$USERNAME $INSTALL_DIRECTORY
 #Running KW Installation and Projects_root configuration
-RUN /opt/Klocwork/kw-server-installer.12.3.0.810.linux64.sh -a --database-port $DATABASE_PORT --klocwork-port $KW_PORT  --license-port $LICENSE_PORT  --projects-root $PROJECTS_ROOT $INSTALL_DIRECTORY
+RUN $INSTALLER_PATH/$INSTALLER_FILE -a --database-port $DATABASE_PORT --klocwork-port $KW_PORT  --license-port $LICENSE_PORT  --projects-root $PROJECTS_ROOT $INSTALL_DIRECTORY
 
 #Copy License File on project root (install your license path here)
 RUN cp $LICENSE_FILE $PROJECTS_ROOT/licenses
