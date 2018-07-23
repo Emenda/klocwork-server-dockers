@@ -24,7 +24,9 @@ amd64
 ### Prerequisites
 * Have administrative rights
 * Have an available internet connexion
-* Download **Docker** from [official website](https://www.docker.com/community-edition#/download  "Docker official website") and install it by following the instructions 
+* Download **Docker** from [official website](https://www.docker.com/community-edition#/download  "Docker official website") and install it by following the instructions
+* Have a valid Klocwork installer (Contact [Emenda](http://emenda.com/))
+* Have a valid Klocwork license (Contact [Emenda](http://emenda.com/))
  	
 ### Configure the Docker file
 * Download your dockerfile for your favorite environment
