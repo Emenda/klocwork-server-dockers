@@ -46,7 +46,7 @@ amd64
 > ARG INSTALLER\_PATH=**/opt/Klocwork**  
 > ARG INSTALL\_DIRECTORY=**/opt/Klocwork/Server**  
 > ARG PROJECTS\_ROOT=**/opt/Klocwork/Projects\_root\_12\_3**  
-> ARG INSTALLER\_FILE=**http://emenda.com/download.?file=kw-server-installer.12.3.0.810.linux64.tar.gz**  
+> ARG INSTALLER\_FILE=**PATH OF INSTALLER FILE**  
 > ARG LICENSE\_FILE=**/license_path/LICENSE.lic**  
  
 
